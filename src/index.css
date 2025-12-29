@@ -104,10 +104,12 @@
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
   }
 
   body {
     line-height: inherit;
+    overflow-x: hidden;
   }
 
   hr {

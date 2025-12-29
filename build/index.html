@@ -5,8 +5,26 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Minimalistic Brand Lookbook Website</title>
-      <script type="module" crossorigin src="/assets/index-CvQNYbuy.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-eikCFGXG.css">
+      <script>
+        // Отключаем автоматическое восстановление позиции скролла
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+        // Прокручиваем страницу наверх при загрузке
+        window.addEventListener('load', function() {
+          window.scrollTo(0, 0);
+        });
+        // Также прокручиваем наверх сразу, если страница уже загружена
+        if (document.readyState === 'complete') {
+          window.scrollTo(0, 0);
+        } else {
+          window.addEventListener('DOMContentLoaded', function() {
+            window.scrollTo(0, 0);
+          });
+        }
+      </script>
+      <script type="module" crossorigin src="/assets/index-P_GgySZ_.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-rYkOo9Fw.css">
     </head>
 
     <body>

@@ -24,30 +24,24 @@ export function Hero({ imageUrl }: HeroProps) {
 
       <div className="relative h-full flex items-center justify-center">
         <div className="text-center text-white px-8">
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+          <p
             className="mb-8 tracking-[0.05em]"
             style={{ fontFamily: 'Karla, sans-serif', fontSize: '24px', lineHeight: '32px', fontWeight: 400 }}
           >
             New minimalist long-sleeve essentials
-          </motion.p>
-          <motion.a
+          </p>
+          <a
             href="#lookbook"
             onClick={(e) => {
               e.preventDefault();
               const el = document.querySelector('#lookbook');
               if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
             className="inline-block px-6 py-2 border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300"
             style={{ fontFamily: 'Karla, sans-serif', fontSize: '20px', lineHeight: '23px', fontWeight: 500 }}
           >
             View in Catalog
-          </motion.a>
+          </a>
         </div>
       </div>
 
